@@ -1,0 +1,73 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "pt-BR": {
+          "summary": "POC para preenchimento de formulário para captação de imóveis",
+          "examplePhrases": [
+            "Alexa abrir tech masters imóveis",
+            "Alexa abrir tech masters",
+            "Alexa abrir formulário da Tech masters"
+          ],
+          "keywords": [
+            "imobiliária",
+            "imóveis",
+            "formulário",
+            "captação"
+          ],
+          "name": "Tech Masters Imóveis",
+          "description": "POC para preenchimento de formulário para captação de imóveis",
+          "smallIconUri": "file://assets/images/pt-BR_smallIconUri.png",
+          "largeIconUri": "file://assets/images/pt-BR_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "para abrir, fale abrir tech masters imóveis. Para ajuda, fale AJUDA. Para captação de novo imóveis, fale NOVO. Responda as perguntas até o final.",
+      "category": "ORGANIZERS_AND_ASSISTANTS",
+      "distributionMode": "PRIVATE",
+      "distributionCountries": [
+        "US",
+        "BR"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:012208589456:function:44e2aaf9-749c-4bec-9660-2e5089b21dc4:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:012208589456:function:44e2aaf9-749c-4bec-9660-2e5089b21dc4:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:012208589456:function:44e2aaf9-749c-4bec-9660-2e5089b21dc4:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:012208589456:function:44e2aaf9-749c-4bec-9660-2e5089b21dc4:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "pt-BR": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

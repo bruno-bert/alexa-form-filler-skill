@@ -1,0 +1,404 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "techmasters imóveis",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "olá",
+            "como vai você",
+            "diga oi mundo",
+            "diga oi",
+            "oi",
+            "diga olá mundo",
+            "diga olá"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "NewItemIntent",
+          "slots": [
+            {
+              "name": "tipoimovel",
+              "type": "tipoimovel",
+              "samples": [
+                "{tipoimovel}"
+              ]
+            },
+            {
+              "name": "vendaaluguel",
+              "type": "tiponegocio",
+              "samples": [
+                "{vendaaluguel}"
+              ]
+            },
+            {
+              "name": "endereco",
+              "type": "AMAZON.StreetName",
+              "samples": [
+                "{endereco}"
+              ]
+            },
+            {
+              "name": "cidade",
+              "type": "AMAZON.City",
+              "samples": [
+                "{cidade}"
+              ]
+            },
+            {
+              "name": "regiao",
+              "type": "AMAZON.Region",
+              "samples": [
+                "{regiao}"
+              ]
+            },
+            {
+              "name": "quartos",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{quartos}"
+              ]
+            },
+            {
+              "name": "suites",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{suites}"
+              ]
+            },
+            {
+              "name": "banheiros",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{banheiros}"
+              ]
+            },
+            {
+              "name": "areagourmet",
+              "type": "flag",
+              "samples": [
+                "{areagourmet}"
+              ]
+            },
+            {
+              "name": "pisolaminado",
+              "type": "flag",
+              "samples": [
+                "{pisolaminado}"
+              ]
+            },
+            {
+              "name": "energiasolar",
+              "type": "flag",
+              "samples": [
+                "{energiasolar}"
+              ]
+            }
+          ],
+          "samples": [
+            "novo"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "chácara"
+              }
+            },
+            {
+              "name": {
+                "value": "terreno"
+              }
+            },
+            {
+              "name": {
+                "value": "casa condomínio"
+              }
+            },
+            {
+              "name": {
+                "value": "casa rua"
+              }
+            }
+          ],
+          "name": "tipoimovel"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "aluguel"
+              }
+            },
+            {
+              "name": {
+                "value": "venda"
+              }
+            }
+          ],
+          "name": "tiponegocio"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "não"
+              }
+            },
+            {
+              "name": {
+                "value": "sim"
+              }
+            }
+          ],
+          "name": "flag"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "NewItemIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.439234417234"
+          },
+          "slots": [
+            {
+              "name": "tipoimovel",
+              "type": "tipoimovel",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.439234417234.16831873349"
+              }
+            },
+            {
+              "name": "vendaaluguel",
+              "type": "tiponegocio",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.439234417234.1210737522997"
+              }
+            },
+            {
+              "name": "endereco",
+              "type": "AMAZON.StreetName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.439234417234.738935242568"
+              }
+            },
+            {
+              "name": "cidade",
+              "type": "AMAZON.City",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.439234417234.1040079196816"
+              }
+            },
+            {
+              "name": "regiao",
+              "type": "AMAZON.Region",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.439234417234.1324395098453"
+              }
+            },
+            {
+              "name": "quartos",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.439234417234.810600530667"
+              }
+            },
+            {
+              "name": "suites",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.439234417234.318389779697"
+              }
+            },
+            {
+              "name": "banheiros",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.439234417234.1271627640439"
+              }
+            },
+            {
+              "name": "areagourmet",
+              "type": "flag",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.439234417234.804589630312"
+              }
+            },
+            {
+              "name": "pisolaminado",
+              "type": "flag",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.439234417234.24665306986"
+              }
+            },
+            {
+              "name": "energiasolar",
+              "type": "flag",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.439234417234.1317772772424"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Confirm.Intent.439234417234",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "todos os dados foram coletados com sucesso. Confirmando, sua captação é para {vendaaluguel} , seu tipo de imóvel é {tipoimovel} , o imóvel possui {quartos} quartos e blablabla. Deseja prosseguir com a inclusão?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.439234417234.16831873349",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Fale o tipo de imóvel entre as opções casa de rua, casa em condomínio, terreno, chácara."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.439234417234.1271627640439",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "quantos banheiros sociais?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.439234417234.804589630312",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "possui área gourmet?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.439234417234.1040079196816",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "em que cidade encontra-se o imóvel?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.439234417234.738935242568",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "qual o nome da rua?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.439234417234.1317772772424",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "possui abastecimento por energia solar?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.439234417234.24665306986",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "possui piso laminado?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.439234417234.318389779697",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "destes quartos, quantos são suítes?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.439234417234.810600530667",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "quantos quartos possui o imóvel?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.439234417234.1210737522997",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "esta captação,,, é para venda ou aluguel?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.439234417234.1324395098453",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "qual a região?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "4"
+}
